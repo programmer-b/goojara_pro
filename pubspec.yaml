@@ -77,7 +77,6 @@ dependencies:
   google_sign_in: ^5.4.2
   animated_text_kit: ^4.2.2
   rename: ^2.0.1
-  google_mobile_ads: ^2.3.0
 
 dev_dependencies:
   flutter_test:
