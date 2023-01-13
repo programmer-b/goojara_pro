@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = Goojara;
+PRODUCT_NAME = flix;
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.dantech.goojara_pro;
+PRODUCT_BUNDLE_IDENTIFIER = com.dantech.flix_pro;
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 com.dantech. All rights reserved.

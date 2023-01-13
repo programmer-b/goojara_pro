@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_build_movie_tabs.dart';
-import 'package:goojara_pro/Components/kf_build_tv_tabs.dart';
+import 'package:flix_pro/Components/kf_build_movie_tabs.dart';
+import 'package:flix_pro/Components/kf_build_tv_tabs.dart';
 
 class KFMovieInformationBuilder extends StatefulWidget {
   const KFMovieInformationBuilder(

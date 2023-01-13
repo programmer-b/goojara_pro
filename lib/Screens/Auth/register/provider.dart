@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Screens/Auth/auth_provider.dart';
+import 'package:flix_pro/Screens/Auth/auth_provider.dart';
 
 class RegisterProvider extends ChangeNotifier {
   final AuthProvider? authProvider;

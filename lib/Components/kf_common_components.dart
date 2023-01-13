@@ -1,7 +1,7 @@
 import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_dimens.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Commons/kf_dimens.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 Widget loadingWidget({bool trending = false}) => Column(

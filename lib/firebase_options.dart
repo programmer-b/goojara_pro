@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'dantech-solutions.appspot.com',
     androidClientId: '721098962234-24kn8ucepcgd9hjn251u4mkn6e2u2jma.apps.googleusercontent.com',
     iosClientId: '721098962234-ctquil0h99lbadnb3flirv7cd0l2lqm4.apps.googleusercontent.com',
-    iosBundleId: 'com.dantech.goojaraPro',
+    iosBundleId: 'com.dantech.flixPro',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -76,6 +76,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'dantech-solutions.appspot.com',
     androidClientId: '721098962234-24kn8ucepcgd9hjn251u4mkn6e2u2jma.apps.googleusercontent.com',
     iosClientId: '721098962234-ctquil0h99lbadnb3flirv7cd0l2lqm4.apps.googleusercontent.com',
-    iosBundleId: 'com.dantech.goojaraPro',
+    iosBundleId: 'com.dantech.flixPro',
   );
 }

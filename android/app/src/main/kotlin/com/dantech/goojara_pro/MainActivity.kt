@@ -1,4 +1,4 @@
-package com.dantech.goojara_pro
+package com.dantech.flix_pro
 
 import io.flutter.embedding.android.FlutterActivity
 

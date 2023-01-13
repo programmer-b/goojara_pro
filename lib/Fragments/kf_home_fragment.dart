@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_menus.dart';
-import 'package:goojara_pro/Components/kf_app_bar_menu_component.dart';
-import 'package:goojara_pro/Fragments/kf_error_screen_fragment.dart';
-import 'package:goojara_pro/Components/kf_sliver_app_bar_component.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Commons/kf_menus.dart';
+import 'package:flix_pro/Components/kf_app_bar_menu_component.dart';
+import 'package:flix_pro/Fragments/kf_error_screen_fragment.dart';
+import 'package:flix_pro/Components/kf_sliver_app_bar_component.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:provider/provider.dart';
 
 class KFHomeFragment extends StatefulWidget {

@@ -1,4 +1,4 @@
-# goojara_pro
+# flix_pro
 
 A new Flutter project.
 

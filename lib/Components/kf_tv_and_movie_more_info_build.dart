@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_more_info_build.dart';
+import 'package:flix_pro/Components/kf_more_info_build.dart';
 
 class KFTVAndMovieMoreInfoBuild extends StatelessWidget {
   const KFTVAndMovieMoreInfoBuild({Key? key, required this.isMovie})

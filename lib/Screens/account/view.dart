@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_bottom_sheet/flutter_awesome_bottom_sheet.dart';
-import 'package:goojara_pro/Screens/Auth/auth_home_screen.dart';
-import 'package:goojara_pro/Screens/account/watch_list.dart';
+import 'package:flix_pro/Screens/Auth/auth_home_screen.dart';
+import 'package:flix_pro/Screens/account/watch_list.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 

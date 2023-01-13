@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 

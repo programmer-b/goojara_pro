@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Screens/Auth/auth_provider.dart';
-import 'package:goojara_pro/Screens/Auth/loading.dart';
-import 'package:goojara_pro/Screens/Auth/register/view.dart';
-import 'package:goojara_pro/Screens/kf_home_screen.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Screens/Auth/auth_provider.dart';
+import 'package:flix_pro/Screens/Auth/loading.dart';
+import 'package:flix_pro/Screens/Auth/register/view.dart';
+import 'package:flix_pro/Screens/kf_home_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 import '../../../Components/kf_divider.dart';

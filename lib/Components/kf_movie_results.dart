@@ -4,8 +4,8 @@ import 'package:android_intent_plus/android_intent.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_awesome_bottom_sheet/flutter_awesome_bottom_sheet.dart';
-import 'package:goojara_pro/Screens/kf_video_player_screen.dart';
-import 'package:goojara_pro/Utils/kf_share.dart';
+import 'package:flix_pro/Screens/kf_video_player_screen.dart';
+import 'package:flix_pro/Utils/kf_share.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 
 class KFMovieResults extends StatefulWidget {

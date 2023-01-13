@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_keys.dart';
-import 'package:goojara_pro/Screens/Auth/auth_provider.dart';
-import 'package:goojara_pro/Screens/Auth/login/view.dart';
-import 'package:goojara_pro/Screens/Auth/password/provider.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_keys.dart';
+import 'package:flix_pro/Screens/Auth/auth_provider.dart';
+import 'package:flix_pro/Screens/Auth/login/view.dart';
+import 'package:flix_pro/Screens/Auth/password/provider.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_movie_data_component.dart';
-import 'package:goojara_pro/Components/kf_movie_header_component.dart';
-import 'package:goojara_pro/Fragments/kf_header_carousel_fragment.dart';
+import 'package:flix_pro/Components/kf_movie_data_component.dart';
+import 'package:flix_pro/Components/kf_movie_header_component.dart';
+import 'package:flix_pro/Fragments/kf_header_carousel_fragment.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 
 import '../../Commons/kf_strings.dart';

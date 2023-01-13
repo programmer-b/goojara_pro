@@ -1,12 +1,12 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_functions.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Components/kf_cast_info_build_component.dart';
-import 'package:goojara_pro/Fragments/kf_content_not_found_fragment.dart';
-import 'package:goojara_pro/Models/kf_cast_information_model.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_functions.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Components/kf_cast_info_build_component.dart';
+import 'package:flix_pro/Fragments/kf_content_not_found_fragment.dart';
+import 'package:flix_pro/Models/kf_cast_information_model.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class KFCastInfoFragment extends StatefulWidget {

@@ -4,10 +4,10 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_functions.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Models/kf_tmdb_images_model.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_functions.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Models/kf_tmdb_images_model.dart';
 
 class KFImageLogoBuilder extends StatefulWidget {
   const KFImageLogoBuilder(

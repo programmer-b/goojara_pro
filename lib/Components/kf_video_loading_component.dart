@@ -1,20 +1,19 @@
 import 'dart:developer';
 
-import 'package:countup/countup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:goojara_pro/Commons/kf_colors.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_functions.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Commons/kf_themes.dart';
-import 'package:goojara_pro/Components/kf_web_component.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Commons/kf_colors.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_functions.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Commons/kf_themes.dart';
+import 'package:flix_pro/Components/kf_web_component.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
-import 'package:percent_indicator/percent_indicator.dart';
 import 'package:provider/provider.dart';
 
 import '../Commons/kf_keys.dart';
+
 
 class KFVideoLoadingComponent extends StatefulWidget {
   KFVideoLoadingComponent(
@@ -52,15 +51,6 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
     final startPage = (await fetchDataFromInternet(homeUrl)).body;
 
     final startDoc = startPage.document;
-    // int numberOfSeasons = 2;
-    // if (mounted) {
-    //   numberOfSeasons = context
-    //           .read<KFProvider>()
-    //           .kfTMDBSearchTVResultsById
-    //           ?.numberOfSeasons ??
-    //       2;
-    // }
-
     String seasonsUrl = "";
     var element = startDoc.getElementById('sesh');
 
@@ -123,6 +113,8 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
 
   @override
   Widget build(BuildContext context) {
+    Future.delayed(const Duration(seconds: 35), () => _delayedLoading = true);
+    
     log("WEB ACCESSED: $webAccessed");
 
     final provider = Provider.of<KFProvider>(context);
@@ -145,9 +137,7 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
           provider.kfTMDBSearchMovieResultsById?.originalTitle ??
           "";
     }
-    if (!webAccessed) {
-      return _configureWeb(title, rootImagePath);
-    }
+
     return Scaffold(
       key: _scaffoldKey,
       body: _buildBody(title, rootImagePath),
@@ -155,82 +145,6 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
   }
 
   void setWebAccessed() async => await setValue(keyWebAccessed, true);
-
-  Widget _configureWeb(String title, String rootImagePath) => FutureBuilder(
-      future: 40.seconds.delay,
-      builder: (_, snap) {
-        if (snap.ready) {
-          WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-            setWebAccessed();
-            finish(context);
-            KFVideoLoadingComponent(
-              homeUrl: homeUrl,
-              isMovie: isMovie,
-              isDownloading: isDownloading,
-              currentSeason: currentSeason,
-              episodeIndex: episodeIndex,
-              numberOfSeasons: numberOfSeasons,
-            ).launch(context);
-          });
-        }
-        return Scaffold(
-          appBar: AppBar(
-            backgroundColor: Colors.black,
-            leading: IconButton(
-              icon: const Icon(
-                Icons.clear,
-                color: white,
-              ),
-              onPressed: () => finish(context),
-            ),
-          ),
-          body: Stack(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(12),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const SpinKitDualRing(
-                              color: white,
-                            ),
-                            20.width,
-                            Countup(
-                              begin: 0,
-                              end: 100,
-                              duration: 40.seconds,
-                              style: primaryTextStyle(color: white, size: 21),
-                              suffix: '%',
-                              curve: Curves.easeIn,
-                            )
-                          ]),
-                      22.height,
-                      Text(
-                        'Just a moment',
-                        style: boldTextStyle(color: white),
-                      ),
-                      12.height,
-                      Text(
-                        'Please wait while we configure your movie browser.',
-                        style: primaryTextStyle(color: white),
-                        textAlign: TextAlign.center,
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              _web(
-                  rootImagePath: rootImagePath,
-                  title: title,
-                  webAccessed: false)
-            ],
-          ),
-        );
-      });
 
   Widget _buildBody(String title, String rootImagePath) =>
       Builder(builder: (context) {
@@ -260,31 +174,16 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
                       ),
                     ),
                     10.height,
-                    CircularPercentIndicator(
-                      animateFromLastPercent: true,
-                      radius: 80,
-                      animationDuration: 35000,
-                      onAnimationEnd: () =>
-                          setState(() => _delayedLoading = true),
-                      animation: true,
-                      percent: 0.97,
-                      center: Countup(
-                        precision: 0,
-                        curve: Curves.fastOutSlowIn,
-                        begin: 0,
-                        end: 97,
-                        duration: 35000.milliseconds,
-                        style: boldTextStyle(size: 16, color: Colors.white),
-                        suffix: '%',
-                      ),
-                      progressColor: kfPrimaryTextColor,
-                    ),
+                    SpinKitFadingCircle(color: white),
+                    8.height,
+                    Text('A minute ...'),
+                    10.height,
                     if (_delayedLoading)
                       Column(
                         children: [
                           10.height,
                           Text(
-                            "Loading this video is taking longer than expected. Please try to connect to fast internet connection or restart the app and try again",
+                            "Loading this video is taking longer than expected. Please try to connect to fast internet connection or re-install the app and try again",
                             style: boldTextStyle(color: kfPrimaryTextColor),
                             textAlign: TextAlign.center,
                           ),
@@ -333,10 +232,8 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
   Widget _web(
           {String? url,
           required String rootImagePath,
-          required String title,
-          bool? webAccessed}) =>
+          required String title}) =>
       Offstage(
-        // offstage: false,
         offstage: true,
         child: WebComponent(
             url: url ??
@@ -346,7 +243,7 @@ class _KFVideoLoadingComponentState extends State<KFVideoLoadingComponent> {
             rootImageUrl: rootImagePath,
             title: title,
             isDownloading: isDownloading,
-            supportMultipleWindows: webAccessed ?? true,
+            // supportMultipleWindows: webAccessed ?? true,
             type: isMovie ? 'movie' : 'tv'),
       );
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:goojara_pro/Commons/kf_colors.dart';
-import 'package:goojara_pro/Fragments/kf_search_fragment.dart';
+import 'package:flix_pro/Commons/kf_colors.dart';
+import 'package:flix_pro/Fragments/kf_search_fragment.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../Screens/account/view.dart';

@@ -1,6 +1,6 @@
 import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_video_loading_component.dart';
+import 'package:flix_pro/Components/kf_video_loading_component.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 import 'package:provider/provider.dart';

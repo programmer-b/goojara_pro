@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_dimens.dart';
-import 'package:goojara_pro/Screens/kf_movie_detail_screen.dart';
+import 'package:flix_pro/Commons/kf_dimens.dart';
+import 'package:flix_pro/Screens/kf_movie_detail_screen.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 
 import 'kf_common_components.dart';

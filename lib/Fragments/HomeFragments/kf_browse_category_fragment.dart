@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_browse_component.dart';
+import 'package:flix_pro/Components/kf_browse_component.dart';
 
 class KFBrowseCategoryFragment extends StatelessWidget {
   const KFBrowseCategoryFragment({Key? key}) : super(key: key);

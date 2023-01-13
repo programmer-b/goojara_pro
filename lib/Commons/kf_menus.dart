@@ -1,6 +1,6 @@
-import 'package:goojara_pro/Fragments/HomeFragments/kf_browse_category_fragment.dart';
-import 'package:goojara_pro/Fragments/HomeFragments/kf_movies_category_fragment.dart';
-import 'package:goojara_pro/Fragments/HomeFragments/kf_tv_shows_category_fragment.dart';
+import 'package:flix_pro/Fragments/HomeFragments/kf_browse_category_fragment.dart';
+import 'package:flix_pro/Fragments/HomeFragments/kf_movies_category_fragment.dart';
+import 'package:flix_pro/Fragments/HomeFragments/kf_tv_shows_category_fragment.dart';
 
 const List<Map<String, dynamic>> kfTopAppBarMenu = [
   {"name": "Movies", "widget": KFMoviesCategoryFragment()},

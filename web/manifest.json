@@ -1,6 +1,6 @@
 {
-    "name": "goojara_pro",
-    "short_name": "goojara_pro",
+    "name": "flix_pro",
+    "short_name": "flix_pro",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

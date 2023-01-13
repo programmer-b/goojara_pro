@@ -134,7 +134,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:721098962234:android:99ff8f8ac6f0b814d60c03",
         "android_client_info": {
-          "package_name": "com.dantech.goojara_ch"
+          "package_name": "com.dantech.flix_ch"
         }
       },
       "oauth_client": [
@@ -142,7 +142,7 @@
           "client_id": "721098962234-r2h31cuqchi3k4mvq1p9jth7s85p4g5c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.dantech.goojara_ch",
+            "package_name": "com.dantech.flix_ch",
             "certificate_hash": "fb0cd925438a613b89a8643f6d83f306c68eb146"
           }
         },
@@ -178,7 +178,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:721098962234:android:904b29ac0496fc47d60c03",
         "android_client_info": {
-          "package_name": "com.dantech.goojara_pro"
+          "package_name": "com.dantech.flix_pro"
         }
       },
       "oauth_client": [
@@ -186,7 +186,7 @@
           "client_id": "721098962234-ai0pdlg7opg08fpccjnn7lvhog2rspv7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.dantech.goojara_pro",
+            "package_name": "com.dantech.flix_pro",
             "certificate_hash": "fb0cd925438a613b89a8643f6d83f306c68eb146"
           }
         },

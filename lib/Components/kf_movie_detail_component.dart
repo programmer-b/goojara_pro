@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Components/kf_image_builder.dart';
-import 'package:goojara_pro/Components/kf_movie_details_actions.dart';
-import 'package:goojara_pro/Components/kf_title_builder.dart';
-import 'package:goojara_pro/Models/kf_tmdb_search_model.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Components/kf_image_builder.dart';
+import 'package:flix_pro/Components/kf_movie_details_actions.dart';
+import 'package:flix_pro/Components/kf_title_builder.dart';
+import 'package:flix_pro/Models/kf_tmdb_search_model.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 
 import 'kf_optional_details.dart';

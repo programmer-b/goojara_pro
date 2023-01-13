@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_tv_season_selection_screen_component.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Components/kf_tv_season_selection_screen_component.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 

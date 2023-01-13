@@ -3,11 +3,11 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
-import 'package:goojara_pro/Commons/kf_colors.dart';
-import 'package:goojara_pro/Fragments/kf_downloads_fragment.dart';
-import 'package:goojara_pro/Fragments/kf_home_fragment.dart';
-import 'package:goojara_pro/Fragments/kf_trailers_and_more_fragment.dart';
-import 'package:goojara_pro/Provider/flutter_downloader_provider.dart';
+import 'package:flix_pro/Commons/kf_colors.dart';
+import 'package:flix_pro/Fragments/kf_downloads_fragment.dart';
+import 'package:flix_pro/Fragments/kf_home_fragment.dart';
+import 'package:flix_pro/Fragments/kf_trailers_and_more_fragment.dart';
+import 'package:flix_pro/Provider/flutter_downloader_provider.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:provider/provider.dart';
 

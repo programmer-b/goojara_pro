@@ -2,13 +2,13 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:html/parser.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Database/kf_movie_database.dart';
-import 'package:goojara_pro/Models/kf_movie_model.dart';
-import 'package:goojara_pro/Models/kf_search_tv_by_id_model.dart';
-import 'package:goojara_pro/Models/kf_tmdb_search_images_model.dart';
-import 'package:goojara_pro/Models/kf_tmdb_search_model.dart';
-import 'package:goojara_pro/Utils/kf_networking.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Database/kf_movie_database.dart';
+import 'package:flix_pro/Models/kf_movie_model.dart';
+import 'package:flix_pro/Models/kf_search_tv_by_id_model.dart';
+import 'package:flix_pro/Models/kf_tmdb_search_images_model.dart';
+import 'package:flix_pro/Models/kf_tmdb_search_model.dart';
+import 'package:flix_pro/Utils/kf_networking.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 // import 'package:path/path.dart';
 

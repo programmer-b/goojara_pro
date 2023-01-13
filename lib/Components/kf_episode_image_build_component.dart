@@ -1,5 +1,5 @@
 // import 'package:flutter/material.dart';
-// import 'package:goojara_pro/Components/kf_image_play.dart';
+// import 'package:flix_pro/Components/kf_image_play.dart';
 
 // class KFEpisodeImageBuildComponent extends StatelessWidget {
 //   const KFEpisodeImageBuildComponent({

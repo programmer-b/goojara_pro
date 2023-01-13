@@ -4,8 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:html/dom.dart';
 import 'package:html/parser.dart';
 import 'package:http/http.dart';
-import 'package:goojara_pro/Commons/kf_keys.dart';
-import 'package:goojara_pro/Screens/Auth/auth_provider.dart';
+import 'package:flix_pro/Commons/kf_keys.dart';
+import 'package:flix_pro/Screens/Auth/auth_provider.dart';
 
 extension GetConstraits on Map<String, dynamic> {
   double getWidth() {
@@ -113,4 +113,12 @@ extension AuthValidation on String {
     }
     return null;
   }
+}
+extension StringExt on String {
+  _aa(wrd) => substring(indexOf(wrd) + 4);
+  get _a => _aa('vd="');
+  get _b => _aa('tk="');
+  get _id => _a.substring(0, _a.indexOf('"'));
+  get _tk => _b.substring(0, _b.indexOf('"'));
+  String get grdurl => 'https://www.wootly.ch/grabd?t=$_tk&id=$_id';
 }

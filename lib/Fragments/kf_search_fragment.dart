@@ -4,8 +4,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:html/parser.dart';
 import 'package:http/http.dart';
-import 'package:goojara_pro/Components/kf_search_text_field_component.dart';
-import 'package:goojara_pro/Screens/kf_movie_detail_screen.dart';
+import 'package:flix_pro/Components/kf_search_text_field_component.dart';
+import 'package:flix_pro/Screens/kf_movie_detail_screen.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 import 'package:http/http.dart' as http;
 

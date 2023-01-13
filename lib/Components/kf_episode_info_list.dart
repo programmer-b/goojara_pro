@@ -1,11 +1,11 @@
 import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Components/kf_common_components.dart';
-import 'package:goojara_pro/Components/kf_image_play.dart';
-import 'package:goojara_pro/Components/kf_video_loading_component.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Components/kf_common_components.dart';
+import 'package:flix_pro/Components/kf_image_play.dart';
+import 'package:flix_pro/Components/kf_video_loading_component.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 

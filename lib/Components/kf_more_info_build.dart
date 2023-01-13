@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Models/kf_search_tv_by_id_model.dart';
-import 'package:goojara_pro/Models/kf_tmdb_search_movie_by_id_model.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Models/kf_search_tv_by_id_model.dart';
+import 'package:flix_pro/Models/kf_tmdb_search_movie_by_id_model.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 import 'package:provider/provider.dart';
 

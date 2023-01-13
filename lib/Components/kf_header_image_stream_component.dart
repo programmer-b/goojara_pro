@@ -2,10 +2,10 @@ import 'dart:io';
 
 import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_colors.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_functions.dart';
-import 'package:goojara_pro/Screens/kf_movie_detail_screen.dart';
+import 'package:flix_pro/Commons/kf_colors.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_functions.dart';
+import 'package:flix_pro/Screens/kf_movie_detail_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:path/path.dart';
 

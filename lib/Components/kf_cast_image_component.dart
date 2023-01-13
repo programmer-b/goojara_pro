@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_functions.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Commons/kf_functions.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
 import 'package:nb_utils/nb_utils.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
 
 class KFCastImageComponent extends StatelessWidget {
   const KFCastImageComponent(

@@ -1,8 +1,8 @@
 import 'package:firebase_phone_auth_handler/firebase_phone_auth_handler.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_keys.dart';
-import 'package:goojara_pro/Screens/Auth/auth_provider.dart';
-import 'package:goojara_pro/Screens/kf_home_screen.dart';
+import 'package:flix_pro/Commons/kf_keys.dart';
+import 'package:flix_pro/Screens/Auth/auth_provider.dart';
+import 'package:flix_pro/Screens/kf_home_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:provider/provider.dart';
 

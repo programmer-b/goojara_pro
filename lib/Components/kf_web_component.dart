@@ -2,27 +2,25 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flix_pro/Components/kf_load_mst.dart';
 import 'package:html/parser.dart';
-import 'package:goojara_pro/Components/kf_movie_results.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 
-import '../Commons/kf_keys.dart';
-import '../Screens/kf_video_player_screen.dart';
 
 class WebComponent extends StatefulWidget {
   const WebComponent(
       {super.key,
-      this.webViewPopupController,
+      // this.webViewPopupController,
       required this.url,
-      this.supportMultipleWindows = true,
+      // this.supportMultipleWindows = true,
       required this.isDownloading,
       required this.title,
       required this.rootImageUrl,
       required this.type});
 
-  final InAppWebViewController? webViewPopupController;
+  // final InAppWebViewController? webViewPopupController;
   final String url;
-  final bool supportMultipleWindows;
+  // final bool supportMultipleWindows;
   final bool isDownloading;
   final String title;
   final String rootImageUrl;
@@ -39,7 +37,7 @@ class _WebComponentState extends State<WebComponent> {
   late String rootImageUrl = widget.rootImageUrl;
   late String type = widget.type;
 
-  bool get webAccessed => getBoolAsync(keyWebAccessed);
+  // bool get webAccessed => getBoolAsync(keyWebAccessed);
   int urlHit = 0;
 
   InAppWebViewController? webViewController;
@@ -50,7 +48,8 @@ class _WebComponentState extends State<WebComponent> {
         javaScriptCanOpenWindowsAutomatically: true,
       ),
       android: AndroidInAppWebViewOptions(
-          supportMultipleWindows: widget.supportMultipleWindows,
+          // supportMultipleWindows: widget.supportMultipleWindows,
+          supportMultipleWindows: true,
           useShouldInterceptRequest: true));
 
   final InAppWebViewGroupOptions options2 = InAppWebViewGroupOptions(
@@ -63,7 +62,7 @@ class _WebComponentState extends State<WebComponent> {
       ),
       android: AndroidInAppWebViewOptions(useShouldInterceptRequest: true));
 
-  Widget _web() => InAppWebView(
+  Widget _web(BuildContext context) => InAppWebView(
         initialUrlRequest: URLRequest(url: Uri.parse(url)),
         initialOptions: options2,
         onWebViewCreated: (controller) {
@@ -74,24 +73,27 @@ class _WebComponentState extends State<WebComponent> {
           final uri = request.url;
           final params = uri.queryParameters;
 
-          if (params["usr"] != null && widget.supportMultipleWindows) {
+          if (params["usr"] != null
+              // &&
+              //  widget.supportMultipleWindows
+              ) {
             log("$uri");
 
-            if (webAccessed) {
-              if (isDownloading) {
-                finish(context);
-                KFMovieResults(
-                  masterUrl: "$uri",
-                  title: title,
-                  isDownloading: isDownloading,
-                ).launch(context);
-              } else {
-                finish(context);
-                KFVideoPlayerScreen(
-                  masterUrl: "$uri",
-                ).launch(context);
-              }
-            }
+            // if(webAccessed){
+            //   if (isDownloading) {
+            //     finish(context);
+            //     KFMovieResults(
+            //       masterUrl: "$uri",
+            //       title: title,
+            //       isDownloading: isDownloading,
+            //     ).launch(context);
+            //   } else {
+            //     finish(context);
+            //     KFVideoPlayerScreen(
+            //       masterUrl: "$uri",
+            //     ).launch(context);
+            //   }
+            // }
             // await setValue(keyWebAccessed, true);
           }
 
@@ -108,12 +110,20 @@ class _WebComponentState extends State<WebComponent> {
               final srcDoc = iframe[0].attributes["src"];
 
               final masterUrl = srcDoc;
-              // log('MASTER URL: $masterUrl');
+              log('MASTER URL: $masterUrl');
               if (Uri.tryParse(masterUrl ?? "")?.hasAbsolutePath ?? false) {
-                controller
-                    .loadUrl(
-                        urlRequest: URLRequest(url: Uri.parse(masterUrl ?? "")))
-                    .then((value) => controller.setOptions(options: options()));
+                finish(context);
+                LoadMst(
+                        url: masterUrl!,
+                        isDownloading: isDownloading,
+                        title: title,
+                        rootImageUrl: rootImageUrl,
+                        type: type)
+                    .launch(context);
+                // controller
+                //     .loadUrl(
+                //         urlRequest: URLRequest(url: Uri.parse(masterUrl ?? "")))
+                //     .then((value) => controller.setOptions(options: options()));
               }
             }
           }
@@ -166,6 +176,7 @@ document.getElementById('prime').click()
   @override
   Widget build(BuildContext context) {
     log("running web");
-    return _web();
+    return _web(context);
   }
 }
+

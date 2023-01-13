@@ -1,13 +1,13 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Fragments/kf_error_screen_fragment.dart';
-import 'package:goojara_pro/Components/kf_movie_detail_component.dart';
-import 'package:goojara_pro/Components/kf_movie_information_builder.dart';
-import 'package:goojara_pro/Fragments/kf_movie_not_found_fragment.dart';
-import 'package:goojara_pro/Components/kf_sliver_app_bar_component.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Fragments/kf_error_screen_fragment.dart';
+import 'package:flix_pro/Components/kf_movie_detail_component.dart';
+import 'package:flix_pro/Components/kf_movie_information_builder.dart';
+import 'package:flix_pro/Fragments/kf_movie_not_found_fragment.dart';
+import 'package:flix_pro/Components/kf_sliver_app_bar_component.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 import 'package:provider/provider.dart';
 

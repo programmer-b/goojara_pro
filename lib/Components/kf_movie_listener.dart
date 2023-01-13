@@ -1,10 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_extensions.dart';
-import 'package:goojara_pro/Commons/kf_functions.dart';
-import 'package:goojara_pro/Commons/kf_keys.dart';
-import 'package:goojara_pro/Components/kf_downloaded_movie_cohot.dart';
+import 'package:flix_pro/Commons/kf_extensions.dart';
+import 'package:flix_pro/Commons/kf_functions.dart';
+import 'package:flix_pro/Commons/kf_keys.dart';
+import 'package:flix_pro/Components/kf_downloaded_movie_cohot.dart';
 
 class KFMovieListener extends StatefulWidget {
   const KFMovieListener({super.key, required this.fileSystemEntity});

@@ -2,10 +2,10 @@ import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Components/kf_movie_detail_action_button_builder.dart';
-import 'package:goojara_pro/Fragments/kf_movie_trailer_fragment.dart';
-import 'package:goojara_pro/Provider/kf_provider.dart';
-import 'package:goojara_pro/Screens/Auth/auth_home_screen.dart';
+import 'package:flix_pro/Components/kf_movie_detail_action_button_builder.dart';
+import 'package:flix_pro/Fragments/kf_movie_trailer_fragment.dart';
+import 'package:flix_pro/Provider/kf_provider.dart';
+import 'package:flix_pro/Screens/Auth/auth_home_screen.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:nb_utils/nb_utils.dart' hide log;
 import 'package:provider/provider.dart';

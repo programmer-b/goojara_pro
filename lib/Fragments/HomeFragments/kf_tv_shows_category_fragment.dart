@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Commons/kf_strings.dart';
-import 'package:goojara_pro/Fragments/kf_header_carousel_fragment.dart';
+import 'package:flix_pro/Commons/kf_strings.dart';
+import 'package:flix_pro/Fragments/kf_header_carousel_fragment.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 import '../../Components/kf_movie_data_component.dart';

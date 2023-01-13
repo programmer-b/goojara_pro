@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.dantech" "\0"
-            VALUE "FileDescription", "goojara_pro" "\0"
+            VALUE "FileDescription", "flix_pro" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "goojara_pro" "\0"
+            VALUE "InternalName", "flix_pro" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.dantech. All rights reserved." "\0"
-            VALUE "OriginalFilename", "goojara_pro.exe" "\0"
-            VALUE "ProductName", "goojara_pro" "\0"
+            VALUE "OriginalFilename", "flix_pro.exe" "\0"
+            VALUE "ProductName", "flix_pro" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:goojara_pro/Screens/kf_movie_detail_screen.dart';
+import 'package:flix_pro/Screens/kf_movie_detail_screen.dart';
 import 'package:nb_utils/nb_utils.dart';
 
 class KFWatchList extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:goojara_pro/Models/kf_movie_model.dart';
+import 'package:flix_pro/Models/kf_movie_model.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
